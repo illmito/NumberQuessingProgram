@@ -31,11 +31,11 @@ while active_game is not False:
         print(f"{user_guess}: Your Guess is too High!")
         guesses -= 1
         print(f"Attempts remain: {guesses}")
-    if user_guess < number_chosen:
+    elif user_guess < number_chosen:
         print(f"{user_guess}: Your Guess is too Low!")
         guesses -= 1
         print(f"Attempts remain: {guesses}")
-    if user_guess == number_chosen:
+    elif user_guess == number_chosen:
         print(f"{user_guess} is correct! ")
         active_game = False
     elif guesses == 0:
